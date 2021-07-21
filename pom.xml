@@ -1,16 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
- 
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <version>1.0-SNAPSHOT</version>
- 
+  <packaging>war</packaging>
   <properties>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
- 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -19,4 +18,38 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   
+    <build>
+        <plugins>
+             <plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-war-plugin</artifactId>
+<version>2.6</version>
+                
+<configuration>
+<failOnMissingWebXml>false</failOnMissingWebXml>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.jboss.as.plugins</groupId>
+<artifactId>jboss-as-maven-plugin</artifactId>
+<version>7.9.Final</version>
+
+<configuration>
+<force>true</force>
+<jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname> 
+  <!-- Where to deploy. -->
+<jboss-as.deploy.port>9999</jboss-as.deploy.port>
+<jboss-as.deploy.user>vk2699</jboss-as.deploy.user>
+<jboss-as.deploy.pass>@Sdf1234</jboss-as.deploy.pass>
+<fileNames>
+<fileName>target\my-app-1.0-SNAPSHOT.war</fileName>
+</fileNames>
+</configuration>
+</plugin>
+  
+
+
+</plugins>
+</build>
 </project>
