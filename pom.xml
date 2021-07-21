@@ -41,7 +41,7 @@
   <!-- Where to deploy. -->
 <jboss-as.deploy.port>9999</jboss-as.deploy.port>
 <jboss-as.deploy.user>vk2699</jboss-as.deploy.user>
-<jboss-as.deploy.pass>@Sdf1234</jboss-as.deploy.pass>
+<jboss-as.deploy.pass>Vishok@99</jboss-as.deploy.pass>
 <fileNames>
 <fileName>target\my-app-1.0-SNAPSHOT.war</fileName>
 </fileNames>
