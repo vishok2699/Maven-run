@@ -41,6 +41,8 @@
 <goal>undeploy</goal>
 </goals>
 </execution>
+</executions>
+<executions>
 <execution>
 <goals> 
 <goal>deploy</goal>
