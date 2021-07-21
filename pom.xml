@@ -44,7 +44,7 @@
 </executions>
  <configuration>
    <force>true</force>
-<hostname>192.168.1.1</hostname>
+<hostname>127.0.0.1</hostname>
 <port>9999</port>
 <name>vk2699</name>
 <password>Vishok@99</password>
