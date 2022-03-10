@@ -47,7 +47,7 @@
    <force>true</force>
 <hostname>127.0.0.1</hostname>
 <port>9999</port>
-<name>common</name>
+<name>KnowledgeEngine</name>
 <password>Vishok@99</password>
 </configuration>
 
